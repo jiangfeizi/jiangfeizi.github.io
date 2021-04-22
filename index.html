@@ -71,6 +71,89 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Learning-CMake" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/20/Learning-CMake/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T00:41:25.000Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/04/20/Learning-CMake/">Learning CMake</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>set(CMAKE_INSTALL_PREFIX “${CMAKE_BINARY_DIR}/install” CACHE STRING “The path to use for make install” FORCE)</p>
+<p>Set a CMake, cache or environment variable to a given value.</p>
+<p>set(<variable> <value><br>    [[CACHE <type> <docstring> [FORCE]] | PARENT_SCOPE])<br>Within CMake sets <variable> to the value <value>. <value> is expanded before <variable> is set to it. Normally, set will set a regular CMake variable. If CACHE is present, then the <variable> is put in the cache instead, unless it is already in the cache. See section ‘Variable types in CMake’ below for details of regular and cache variables and their interactions. If CACHE is used, <type> and <docstring> are required. <type> is used by the CMake GUI to choose a widget with which the user sets a value. The value for <type> may be one of</p>
+<p>FILEPATH = File chooser dialog.<br>PATH     = Directory chooser dialog.<br>STRING   = Arbitrary string.<br>BOOL     = Boolean ON/OFF checkbox.<br>INTERNAL = No GUI entry (used for persistent variables).<br>If <type> is INTERNAL, the cache variable is marked as internal, and will not be shown to the user in tools like cmake-gui. This is intended for values that should be persisted in the cache, but which users should not normally change. INTERNAL implies FORCE.</p>
+<p>Normally, set(…CACHE…) creates cache variables, but does not modify them. If FORCE is specified, the value of the cache variable is set, even if the variable is already in the cache. This should normally be avoided, as it will remove any changes to the cache variable’s value by the user.</p>
+<p>If PARENT_SCOPE is present, the variable will be set in the scope above the current scope. Each new directory or function creates a new scope. This command will set the value of a variable into the parent directory or calling function (whichever is applicable to the case at hand). PARENT_SCOPE cannot be combined with CACHE.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/20/Learning-CMake/" data-id="cknsnz690000014u4ej0579b5" data-title="Learning CMake" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Windows常用快捷键" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/19/Windows%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="article-date">
+  <time class="dt-published" datetime="2021-04-19T01:10:40.000Z" itemprop="datePublished">2021-04-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/04/19/Windows%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">Windows常用快捷键</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>新建文件夹：Ctrl+Shift+N</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/19/Windows%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" data-id="cknsnz691000114u4cqwjfs8h" data-title="Windows常用快捷键" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-精选软件" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/04/17/%E7%B2%BE%E9%80%89%E8%BD%AF%E4%BB%B6/" class="article-date">
@@ -132,7 +215,10 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>ssh-key</p>
+<p>git切换到指定远程分支<br>git checkout -b 本地分支名 origin/远程分支名</p>
+<p>以下命令将本地的 master 分支推送到 origin 主机的 master 分支。<br>git push origin master</p>
+
       
     </div>
     <footer class="article-footer">
@@ -306,6 +392,14 @@
       <ul>
         
           <li>
+            <a href="/2021/04/20/Learning-CMake/">Learning CMake</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/19/Windows%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">Windows常用快捷键</a>
+          </li>
+        
+          <li>
             <a href="/2021/04/17/%E7%B2%BE%E9%80%89%E8%BD%AF%E4%BB%B6/">精选软件</a>
           </li>
         
@@ -315,14 +409,6 @@
         
           <li>
             <a href="/2021/04/17/Learning-Markdown/">Learning Markdown</a>
-          </li>
-        
-          <li>
-            <a href="/2021/04/17/Restart/">Restart</a>
-          </li>
-        
-          <li>
-            <a href="/2021/04/17/hello-world/">Hello World</a>
           </li>
         
       </ul>

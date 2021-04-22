@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Learning Git | Hexo</title>
+  <title>Learning CMake | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="ssh-key git切换到指定远程分支git checkout -b 本地分支名 origin&#x2F;远程分支名 以下命令将本地的 master 分支推送到 origin 主机的 master 分支。git push origin master">
+  <meta name="description" content="set(CMAKE_INSTALL_PREFIX “${CMAKE_BINARY_DIR}&#x2F;install” CACHE STRING “The path to use for make install” FORCE) Set a CMake, cache or environment variable to a given value. set(     [[CACHE   [FORCE]] |">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Learning Git">
-<meta property="og:url" content="http://example.com/2021/04/17/Learning-Git/index.html">
+<meta property="og:title" content="Learning CMake">
+<meta property="og:url" content="http://example.com/2021/04/20/Learning-CMake/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ssh-key git切换到指定远程分支git checkout -b 本地分支名 origin&#x2F;远程分支名 以下命令将本地的 master 分支推送到 origin 主机的 master 分支。git push origin master">
+<meta property="og:description" content="set(CMAKE_INSTALL_PREFIX “${CMAKE_BINARY_DIR}&#x2F;install” CACHE STRING “The path to use for make install” FORCE) Set a CMake, cache or environment variable to a given value. set(     [[CACHE   [FORCE]] |">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-17T07:42:37.000Z">
-<meta property="article:modified_time" content="2021-04-20T00:35:40.751Z">
+<meta property="article:published_time" content="2021-04-20T00:41:25.000Z">
+<meta property="article:modified_time" content="2021-04-20T01:00:55.749Z">
 <meta property="article:author" content="Dou Nai">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Learning-Git" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Learning-CMake" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/04/17/Learning-Git/" class="article-date">
-  <time class="dt-published" datetime="2021-04-17T07:42:37.000Z" itemprop="datePublished">2021-04-17</time>
+    <a href="/2021/04/20/Learning-CMake/" class="article-date">
+  <time class="dt-published" datetime="2021-04-20T00:41:25.000Z" itemprop="datePublished">2021-04-20</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Learning Git
+      Learning CMake
     </h1>
   
 
@@ -95,14 +95,17 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>ssh-key</p>
-<p>git切换到指定远程分支<br>git checkout -b 本地分支名 origin/远程分支名</p>
-<p>以下命令将本地的 master 分支推送到 origin 主机的 master 分支。<br>git push origin master</p>
+        <p>set(CMAKE_INSTALL_PREFIX “${CMAKE_BINARY_DIR}/install” CACHE STRING “The path to use for make install” FORCE)</p>
+<p>Set a CMake, cache or environment variable to a given value.</p>
+<p>set(<variable> <value><br>    [[CACHE <type> <docstring> [FORCE]] | PARENT_SCOPE])<br>Within CMake sets <variable> to the value <value>. <value> is expanded before <variable> is set to it. Normally, set will set a regular CMake variable. If CACHE is present, then the <variable> is put in the cache instead, unless it is already in the cache. See section ‘Variable types in CMake’ below for details of regular and cache variables and their interactions. If CACHE is used, <type> and <docstring> are required. <type> is used by the CMake GUI to choose a widget with which the user sets a value. The value for <type> may be one of</p>
+<p>FILEPATH = File chooser dialog.<br>PATH     = Directory chooser dialog.<br>STRING   = Arbitrary string.<br>BOOL     = Boolean ON/OFF checkbox.<br>INTERNAL = No GUI entry (used for persistent variables).<br>If <type> is INTERNAL, the cache variable is marked as internal, and will not be shown to the user in tools like cmake-gui. This is intended for values that should be persisted in the cache, but which users should not normally change. INTERNAL implies FORCE.</p>
+<p>Normally, set(…CACHE…) creates cache variables, but does not modify them. If FORCE is specified, the value of the cache variable is set, even if the variable is already in the cache. This should normally be avoided, as it will remove any changes to the cache variable’s value by the user.</p>
+<p>If PARENT_SCOPE is present, the variable will be set in the scope above the current scope. Each new directory or function creates a new scope. This command will set the value of a variable into the parent directory or calling function (whichever is applicable to the case at hand). PARENT_SCOPE cannot be combined with CACHE.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/17/Learning-Git/" data-id="cknlj6prh00011gvieq8y1erm" data-title="Learning Git" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/20/Learning-CMake/" data-id="cknsnz690000014u4ej0579b5" data-title="Learning CMake" class="article-share-link">Share</a>
       
       
       
@@ -112,19 +115,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/04/17/%E7%B2%BE%E9%80%89%E8%BD%AF%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          精选软件
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/17/Learning-Markdown/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/04/19/Windows%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Learning Markdown</div>
+      <div class="article-nav-title">Windows常用快捷键</div>
     </a>
   
 </nav>
