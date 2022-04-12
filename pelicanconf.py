@@ -1,10 +1,19 @@
 AUTHOR = 'Tom'
-SITENAME = 'Blog'
-SITEURL = ''
+SITENAME = "Tom's life"
+SITEURL = 'https://jiangfeizi.github.io/'
+TIMEZONE = 'Asia/Shanghai'
+LOCALE = "zh_CN.utf8"
+
+THEME = "/root/pelican-themes/elegant"
 
 PATH = 'content'
+RELATIVE_URLS = True
 
-TIMEZONE = 'Europe/Rome'
+STATIC_PATHS = ['images']
+
+LOAD_CONTENT_CACHE = False
+DISPLAY_PAGES_ON_MENU = False
+
 
 DEFAULT_LANG = 'en'
 USE_FOLDER_AS_CATEGORY = True

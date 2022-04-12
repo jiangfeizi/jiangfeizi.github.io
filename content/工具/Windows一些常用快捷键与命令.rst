@@ -1,7 +1,7 @@
 Windows一些常用快捷键与命令
 ####################################################
-:author: Tom
 :tags: tools
+:slug: 01
 :status: published
 
 

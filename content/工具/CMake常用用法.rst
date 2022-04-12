@@ -1,7 +1,7 @@
-Git常用用法
+CMake常用用法
 ################################################
 :tags: tools
-:slug: 03
+:slug: 04
 :status: published
 
-查看帮助文档： git <command> -h
+查看帮助文档： cmake -h
