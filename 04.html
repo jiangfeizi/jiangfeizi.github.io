@@ -1,245 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Tom" />
+    <meta name="robots" content="index, follow"/>
 
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <meta property="og:title" content="CMake常用用法"/>
+    <meta property="og:url" content="./04.html"/>
+    <meta property="og:site_name" content="Tom's life"/>
+    <meta property="og:type" content="article"/>
 
-        <meta name="author" content="Tom" />
+    <link rel="canonical" href="./04.html" />
 
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary">
+    <title>CMake常用用法 | Tom's life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="keywords" content="tools, 工具, " />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
 
-<meta property="og:title" content="CMake常用用法 "/>
-<meta property="og:url" content="./04.html" />
-<meta property="og:description" content="查看帮助文档： cmake -h option -&gt; 设置一个默认bool值 $ENV{...} -&gt; 环境变量 message -&gt; 打印消息" />
-<meta property="og:site_name" content="Tom&#39;s life" />
-<meta property="og:article:author" content="Tom" />
-<meta property="og:article:published_time" content="2022-04-20T14:08:32.227289+08:00" />
-<meta property="og:article:modified_time" content="2022-04-20T14:08:32.227289+08:00" />
-<meta name="twitter:title" content="CMake常用用法 ">
-<meta name="twitter:description" content="查看帮助文档： cmake -h option -&gt; 设置一个默认bool值 $ENV{...} -&gt; 环境变量 message -&gt; 打印消息">
+    <link rel="stylesheet" type="text/css" href="./theme/css/main.css" />
 
-        <title>CMake常用用法  · Tom&#39;s life
-</title>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+</head>
 
+<body id="index">
+<a class="hidden-phone" href="https://github.com/jiangfeizi">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
+</a>
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="./">Tom's life </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li ><a href="./category/blog.html">Blog</a></li>
+                            <li class="active"><a href="./category/gong-ju.html">工具</a></li>
+                        </ul>
 
-
-    </head>
-    <body>
-        <div id="content">
-            <div class="navbar navbar-static-top">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="./"><span class=site-name>Tom's life</span></a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right top-menu">
-                                <li >
-                                    <a href=
-                                       .
-                                    >Home</a>
-                                </li>
-                                <li ><a href="./categories.html">Categories</a></li>
-                                <li ><a href="./tags.html">Tags</a></li>
-                                <li ><a href="./archives.html">Archives</a></li>
-                                <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span1"></div>
-                    <div class="span10">
-<article itemscope>
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
-        <h1>
-            <a href="./04.html">
-                CMake常用用法
-            </a>
-        </h1>
-    </header>
-</div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
 
-<div class="row-fluid">
-        <div class="span8 offset2 article-content">
-            
-            <p>查看帮助文档： cmake -h
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span10 offset1">
+  <section>
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="./04.html" rel="bookmark"
+             title="Permalink to CMake常用用法">CMake常用用法</a></h1>
+      </header>
+      <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="./author/tom.html">Tom</a>
+    </address>
+
+    in <a href="./category/gong-ju.html">工具</a>
+
+    on 2022-04-20
+
+        |
+        tags:         <a href="./tag/tools.html">tools</a>
+
+
+        |
+        <a href="./04.html#disqus_thread">comments</a>
+
+    
+</footer><!-- /.post-info -->
+
+        <p>查看帮助文档： cmake -h
 option -&gt; 设置一个默认bool值
 $ENV{...} -&gt; 环境变量
 message -&gt; 打印消息</p>
 
 
-
-             
- 
-            
-            
-            
-
-
-
-
-
-
-
-            <hr/>
-        </div>
-        <section id="article-sidebar" class="span2">
-            <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2022-04-20T14:08:32.227289+08:00">三 20 四月 2022</time>
-
-            <h4>Category</h4>
-            <a class="category-link" href="./categories.html#gong-ju-ref">工具</a>
-            <h4>Tags</h4>
-            <ul class="list-of-tags tags-in-article">
-                <li><a href="./tags.html#tools-ref">tools
-                    <span class="superscript">4</span>
-</a></li>
-            </ul>
-            
-
-
-
-
-
-            
-
-
-
-
-
-        </section>
-</div>
-</article>
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides.
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>                    </div>
-                    <div class="span1"></div>
-                </div>
-            </div>
-        </div>
-<footer>
-
-
-
-
-    <div id="fpowered">
-        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
-        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
-    </div>
-</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="./theme/js/elegant.prod.9e9d5ce754.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
+      </div><!-- /.entry-content -->
+      <div class="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "04.html";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//blog-notmyidea.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
         </script>
+      </div>
 
-    <script>
+    </article>
+  </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </p>
+                    <p>
+                        <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a> is a responsive theme designed by <a href="http://jsliang.com/">jsliang</a> and <a href="https://github.com/jsliang/pelican-fresh/graphs/contributors">contributors</a>.
+                        Special thanks to <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript">
+    var disqus_shortname = 'blog-notmyidea';
     (function () {
-        if (window.location.hash.match(/^#comment-\d+$/)) {
-            $('#comment_thread').collapse('show');
-        }
-    })();
-    window.onhashchange=function(){
-        if (window.location.hash.match(/^#comment-\d+$/))
-            window.location.reload(true);
-    }
-    $('#comment_thread').on('shown', function () {
-        var link = document.getElementById('comment-accordion-toggle');
-        var old_innerHTML = link.innerHTML;
-        $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
-        });
-        $('#comment_thread').on('hidden', function () {
-            $(link).fadeOut(200, function() {
-                $(this).text(old_innerHTML).fadeIn(200);
-            });
-        })
-    })
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
 </script>
-
-    </body>
-    <!-- Theme: Elegant built for Pelican
-        License : MIT -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
 </html>
