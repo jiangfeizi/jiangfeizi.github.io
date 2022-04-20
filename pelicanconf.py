@@ -14,6 +14,11 @@ STATIC_PATHS = ['images']
 LOAD_CONTENT_CACHE = False
 DISPLAY_PAGES_ON_MENU = False
 
+ENCRYPT_CONTENT = {
+    'title_prefix': '[Encrypted]',
+    'summary': 'This content is encrypted.'
+}
+
 
 DEFAULT_LANG = 'en'
 USE_FOLDER_AS_CATEGORY = True
