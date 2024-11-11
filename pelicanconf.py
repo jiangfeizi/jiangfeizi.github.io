@@ -1,5 +1,5 @@
 AUTHOR = 'Tom'
-SITENAME = 'Tom'
+SITENAME = 'Tom\'s life'
 SITEURL = ""
 
 PATH = "content"
@@ -33,3 +33,12 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+THEME = r'E:\repositories\pelican-themes\mediumfox'
+DEFAULT_DATE = 'fs'
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = []
+
+AUTHOR_GITHUB = r'jiangfeizi'
+AUTHOR_EMAIL = '1131066623@qq.com'
