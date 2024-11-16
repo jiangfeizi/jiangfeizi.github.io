@@ -15,6 +15,28 @@ function myFunction()
         alert("密码不正确");
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const photos = document.querySelectorAll('.photo img');
+
+    photos.forEach(photo => {
+        photo.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            overlay.innerHTML = `
+                <div class="overlay-content">
+                    <img src="${photo.src}" alt="${photo.alt}">
+                </div>
+            `;
+            document.body.appendChild(overlay);
+
+            // 点击关闭
+            overlay.addEventListener('click', () => {
+                overlay.remove();
+            });
+        });
+    });
+});
 </script>
 
 <p>请输入密码。</p>
