@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<p>请输入密码。</p>
+<!-- <p>请输入密码。</p>
 <input id="demo" type="text">
 <img id="img" border="0" src="" alt="Pulpit rock" width="304" height="228">
-<button type="button" onclick="myFunction()">确认</button>
+<button type="button" onclick="myFunction()">确认</button> -->
 
 <div class="photo-wall">
     <div class="photo">
@@ -56,10 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <!-- 更多照片 -->
 </div>
-
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" allow="autoplay" src="//music.163.com/outchain/player?type=3&id=2531931177&auto=1&height=66"></iframe>
-
-
-
 

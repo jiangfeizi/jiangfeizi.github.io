@@ -43,3 +43,17 @@
     max-height: 90%;
     border-radius: 10px;
 }
+
+
+/* 底部插件样式 */
+#bottom-plugin {
+    position: fixed; /* 固定位置 */
+    bottom: 0;       /* 距底部 0 像素 */
+    left: 0;         /* 距左侧 0 像素 */
+    border: 0;
+    padding: 0;
+    width: 100%;     /* 占满宽度 */
+    background-color: #ffffff; /* 背景颜色 */
+    z-index: 1000;   /* 确保位于其他元素之上 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 顶部阴影效果 */
+}
