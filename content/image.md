@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="photo-wall">
     <div class="photo">
-        <img src="" alt="照片1">
+        <img src="/images/placehold.png" alt="照片1">
     </div>
     <div class="photo">
-        <img src="" alt="照片2">
+        <img src="/images/placehold.png" alt="照片2">
     </div>
     <div class="photo">
-        <img src="" alt="照片3">
+        <img src="/images/placehold.png" alt="照片3">
     </div>
 </div>
 
