@@ -57,3 +57,8 @@
     z-index: 1000;   /* 确保位于其他元素之上 */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 顶部阴影效果 */
 }
+
+.inline-form{
+    gap: 15px;
+    padding: 20px;
+}

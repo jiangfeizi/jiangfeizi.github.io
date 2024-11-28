@@ -16,7 +16,7 @@
 
   <link rel="canonical" href="{% block canonical %}{{ SITEURL }}{% endblock canonical %}">
 
-  <link href="{{ SITEURL }}/favicon.png" rel="icon">
+  <!-- <link href="{{ SITEURL }}/favicon.png" rel="icon"> -->
 
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -81,7 +81,7 @@
       </div>
     </footer>
     <div id="bottom-plugin">
-      <iframe class="music" frameborder="no" allow="autoplay" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=569213220&auto=1&height=66"></iframe>
+      <iframe class="music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=52 allow="autoplay" src="//music.163.com/outchain/player?type=2&id=569213220&auto=0&height=32"></iframe>
     </div>
     {% block foot_js %}
     {% if USE_MATHJAX %}

@@ -1,14 +1,17 @@
 Title: 我的老婆
-
+Date: 2024-10-19
 
 <script>
 function myFunction()
 {
-    var x=document.getElementById("demo").value;
-	if(x=="520")
+    var x=document.getElementById("password").value;
+	if(x=="951019")
 	{
-		element=document.getElementById("img");
-        element.src="/images/yang.jpg";
+        photos = document.querySelectorAll('.photo img');
+
+        photos.forEach(photo => {
+            photo.src = "/images/yang.jpg"
+        });
 	}
     else
     {
@@ -39,21 +42,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- <p>请输入密码。</p>
-<input id="demo" type="text">
-<img id="img" border="0" src="" alt="Pulpit rock" width="304" height="228">
-<button type="button" onclick="myFunction()">确认</button> -->
+<div class="photo-wall">
+
+</div>
+
+<form class="inline-form">
+    <input id="password" type="text" placeholder="输入密码">
+    <button type="button" onclick="myFunction()">提交</button>
+</form>
 
 <div class="photo-wall">
     <div class="photo">
-        <img src="/images/yang.jpg" alt="照片1">
+        <img src="" alt="照片1">
     </div>
     <div class="photo">
-        <img src="/images/yang.jpg" alt="照片2">
+        <img src="" alt="照片2">
     </div>
     <div class="photo">
-        <img src="/images/yang.jpg" alt="照片3">
+        <img src="" alt="照片3">
     </div>
-    <!-- 更多照片 -->
 </div>
 
